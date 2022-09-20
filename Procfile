@@ -1,1 +1,1 @@
-web: python pantau.py
+worker: python pantau.py
