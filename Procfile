@@ -1,1 +1,1 @@
-worker: python pantau.py
+web: python script.py --port=$PORT
