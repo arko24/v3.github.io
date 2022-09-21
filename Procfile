@@ -1,1 +1,1 @@
-worker: python script.py
+web: voila --port=$PORT --no-browser test.ipynb
