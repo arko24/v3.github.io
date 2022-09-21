@@ -6,7 +6,7 @@ from datetime import datetime
 
 
 #script 
-subprocess.call("cls", shell=True)
+subprocess.call("clear", shell=True)
 
 #class
 def xharga(coin):
