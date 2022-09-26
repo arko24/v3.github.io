@@ -6,7 +6,7 @@ from datetime import datetime
 
 
 #script 
-subprocess.call("clear", shell=True)
+subprocess.call("cls", shell=True)
 
 #class
 def xharga(coin):
@@ -53,12 +53,12 @@ k3 = (float('9.0521571')*float(bd['tickers'][a2]['last']))
 k4 = (float('4.10860236')*float(bd['tickers'][a2]['last']))
 
 #support / resistant harian
-RS3 = float('24071.9')
-RS2 = float('22792.4')
-RS1 = float('22001.9')
-SS1 = float('19442.7')
-SS2 = float('18652.2')
-SS3 = float('17372.7')
+RS3 = float('20999.5')
+RS2 = float('20264.4')
+RS1 = float('19810.2')
+SS1 = float('18339.8')
+SS2 = float('17885.6')
+SS3 = float('17150.5')
 
 #binance
 bi1 = (float(bd2[7]['price']))
@@ -79,11 +79,11 @@ print ('USDT     :'+'{:10,.2f}'.format(float((bd ['tickers'][a2]['last'])))+'  L
 print ('BULL     :'+'{:10,.2f}'.format(float((bd ['tickers'][a5]['last'])))+'  HIGH  :'+'{:10,.2f}'.format(float((bd ['tickers'][a5]['high']))))
 print ('BEAR     :'+'{:10,.6f}'.format(float((bd ['tickers'][a3]['last'])))+'  LOW   :'+'{:10,.6f}'.format(float((bd ['tickers'][a3]['low']))))
 print ('ETHBULL  :'+'{:10,.2f}'.format(float((bd ['tickers'][a7]['last'])))+'  HIGH  :'+'{:10,.2f}'.format(float((bd ['tickers'][a7]['high']))))
-print ('BNBBULL  :'+'{:10,.2f}'.format(float((bd ['tickers'][a8]['last'])))+'  HIGH  :'+'{:10,.2f}'.format(float((bd ['tickers'][a8]['high']))))
+print ('BNBBULL  :'+'{:10,.2f}'.format(float((bd ['tickers'][a8]['last'])))+'  LOW   :'+'{:10,.2f}'.format(float((bd ['tickers'][a8]['low']))))
  
 print('==========================================')
-print ('VOL BTC  :'+'{:10,.2f}'.format(float((bd ['tickers'][a1]['vol_btc'])))+'  ==>    42.38')
-print ('VOL ETH  :'+'{:10,.2f}'.format(float((bd ['tickers'][a6]['vol_eth'])))+'  ==>   346.30')
+print ('VOL BTC  :'+'{:10,.2f}'.format(float((bd ['tickers'][a1]['vol_btc'])))+'  ==>    31.87')
+print ('VOL ETH  :'+'{:10,.2f}'.format(float((bd ['tickers'][a6]['vol_eth'])))+'  ==>   393.96')
 
 
 
