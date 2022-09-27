@@ -6,7 +6,7 @@ from datetime import datetime
 
 
 #script 
-subprocess.call("cls", shell=True)
+subprocess.call("clear", shell=True)
 
 #class
 def xharga(coin):
@@ -47,7 +47,7 @@ b8 = ('bnbbull_usdt')
 
 #masukan Aset
 #k0 = (float('0.56709822')*float(bd['tickers'][a2]['last']))
-k0 = (float('3')*float(bd['tickers'][a2]['last']))
+k0 = (float('1.5')*float(bd['tickers'][a2]['last']))
 k2 = (float('653234.50617936')*float(bd['tickers'][a2]['last']))
 k3 = (float('9.0521571')*float(bd['tickers'][a2]['last']))
 k4 = (float('4.10860236')*float(bd['tickers'][a2]['last']))
