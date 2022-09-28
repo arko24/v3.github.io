@@ -6,7 +6,7 @@ from datetime import datetime
 
 
 #script 
-subprocess.call("clear", shell=True)
+subprocess.call("cls", shell=True)
 
 #class
 def xharga(coin):
@@ -48,7 +48,7 @@ b8 = ('bnbbull_usdt')
 #masukan Aset
 #k0 = (float('0.56709822')*float(bd['tickers'][a2]['last']))
 k0 = (float('1.5')*float(bd['tickers'][a2]['last']))
-k2 = (float('653234.50617936')*float(bd['tickers'][a2]['last']))
+k2 = (float('807910.48519736')*float(bd['tickers'][a2]['last']))
 k3 = (float('9.0521571')*float(bd['tickers'][a2]['last']))
 k4 = (float('4.10860236')*float(bd['tickers'][a2]['last']))
 
@@ -69,16 +69,16 @@ print('==========================================')
 ax1 = (float(bd['tickers'][a5]['last'])*float(k0))
 ax2 = (float(bd['tickers'][a3]['last'])*float(k2))
 print('ESTIMASI BULL     :''{:16,.2f}'.format(float(bd['tickers'][a5]['last'])*float(k0)))
-print('ESTIMASI ETH BULL :''{:16,.2f}'.format(float(bd['tickers'][a7]['last'])*float(k3)))
+#print('ESTIMASI ETH BULL :''{:16,.2f}'.format(float(bd['tickers'][a7]['last'])*float(k3)))
 print('ESTIMASI BEAR     :''{:16,.2f}'.format(float(bd['tickers'][a3]['last'])*float(k2)))
 #print('ESTIMASI BNB BULL :''{:16,.2f}'.format(float(bd['tickers'][a8]['last'])*float(k4)))
 #print('ESTIMASI ASET    :''{:16,.2f}'.format((ax1)+(ax2)))
 
 print('==========================================')
 print ('USDT     :'+'{:10,.2f}'.format(float((bd ['tickers'][a2]['last'])))+'  LOW   :'+'{:10,.2f}'.format(float((bd ['tickers'][a2]['low']))))
-print ('BULL     :'+'{:10,.2f}'.format(float((bd ['tickers'][a5]['last'])))+'  HIGH  :'+'{:10,.2f}'.format(float((bd ['tickers'][a5]['high']))))
-print ('BEAR     :'+'{:10,.6f}'.format(float((bd ['tickers'][a3]['last'])))+'  LOW   :'+'{:10,.6f}'.format(float((bd ['tickers'][a3]['low']))))
-print ('ETHBULL  :'+'{:10,.2f}'.format(float((bd ['tickers'][a7]['last'])))+'  HIGH  :'+'{:10,.2f}'.format(float((bd ['tickers'][a7]['high']))))
+print ('BULL     :'+'{:10,.2f}'.format(float((bd ['tickers'][a5]['last'])))+'  LOW   :'+'{:10,.2f}'.format(float((bd ['tickers'][a5]['low']))))
+print ('BEAR     :'+'{:10,.6f}'.format(float((bd ['tickers'][a3]['last'])))+'  HIGH  :'+'{:10,.6f}'.format(float((bd ['tickers'][a3]['high']))))
+print ('ETHBULL  :'+'{:10,.2f}'.format(float((bd ['tickers'][a7]['last'])))+'  LOW   :'+'{:10,.2f}'.format(float((bd ['tickers'][a7]['low']))))
 print ('BNBBULL  :'+'{:10,.2f}'.format(float((bd ['tickers'][a8]['last'])))+'  LOW   :'+'{:10,.2f}'.format(float((bd ['tickers'][a8]['low']))))
  
 print('==========================================')
