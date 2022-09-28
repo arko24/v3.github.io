@@ -87,7 +87,7 @@ print ('ETHBULL  :'+'{:10,.2f}'.format(float((bd ['tickers'][a7]['last'])))+'  L
 #print ('BNBBULL  :'+'{:10,.2f}'.format(float((bd ['tickers'][a8]['last'])))+'  LOW   :'+'{:10,.2f}'.format(float((bd ['tickers'][a8]['low']))))
  
 print('===================================')
-print ('BTC     :'+'{:10,.2f}'.format(float(per1))+'% ETH :'+'{:8,.2f}'.format(float(per2))+'%')
+#print ('BTC     :'+'{:10,.2f}'.format(float(per1))+'% ETH :'+'{:8,.2f}'.format(float(per2))+'%')
 print ('VOL BTC :'+'{:10,.2f}'.format(float((bd ['tickers'][a1]['vol_btc'])))+'   ==>    63.36')
 print ('VOL ETH :'+'{:10,.2f}'.format(float((bd ['tickers'][a6]['vol_eth'])))+'   ==>   529.80')
 print ('VOL BTC :'+'{:10,.2f}'.format(float(vol1))+'   ==> 10.228.63')
