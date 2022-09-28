@@ -6,7 +6,7 @@ from datetime import datetime
 
 
 #script 
-subprocess.call("clear", shell=True)
+subprocess.call("cls", shell=True)
 
 #class
 def xharga(coin):
@@ -16,7 +16,8 @@ def xharga(coin):
   return js
 
 def xharga2(coin):
-  url = 'https://testnet.binance.vision/api/v3/ticker/price'
+#  url = 'https://testnet.binance.vision/api/v3/ticker/price' 
+  url = 'https://testnet.binance.vision/api/v3/ticker/24hr'
   r = rq.get(url)
   js = json.loads(r.text)
   return js
@@ -61,8 +62,12 @@ SS2 = float('17885.6')
 SS3 = float('17150.5')
 
 #binance
-bi1 = (float(bd2[7]['price']))
-bi12 = (float(bd2[8]['price']))
+bi1 = (float(bd2[7]['lastPrice']))
+bi12 = (float(bd2[8]['lastPrice']))
+vol1 = (float(bd2[7]['volume']))
+vol2 = (float(bd2[8]['volume']))
+per1 = (float(bd2[7]['priceChangePercent']))
+per2 = (float(bd2[8]['priceChangePercent']))
 
 #tampilkan harga BTC
 print('==========================================')
@@ -79,13 +84,14 @@ print ('USDT     :'+'{:10,.2f}'.format(float((bd ['tickers'][a2]['last'])))+'  L
 print ('BULL     :'+'{:10,.2f}'.format(float((bd ['tickers'][a5]['last'])))+'  LOW   :'+'{:10,.2f}'.format(float((bd ['tickers'][a5]['low']))))
 print ('BEAR     :'+'{:10,.6f}'.format(float((bd ['tickers'][a3]['last'])))+'  HIGH  :'+'{:10,.6f}'.format(float((bd ['tickers'][a3]['high']))))
 print ('ETHBULL  :'+'{:10,.2f}'.format(float((bd ['tickers'][a7]['last'])))+'  LOW   :'+'{:10,.2f}'.format(float((bd ['tickers'][a7]['low']))))
-print ('BNBBULL  :'+'{:10,.2f}'.format(float((bd ['tickers'][a8]['last'])))+'  LOW   :'+'{:10,.2f}'.format(float((bd ['tickers'][a8]['low']))))
+#print ('BNBBULL  :'+'{:10,.2f}'.format(float((bd ['tickers'][a8]['last'])))+'  LOW   :'+'{:10,.2f}'.format(float((bd ['tickers'][a8]['low']))))
  
-print('==========================================')
-print ('VOL BTC  :'+'{:10,.2f}'.format(float((bd ['tickers'][a1]['vol_btc'])))+'  ==>    31.87')
-print ('VOL ETH  :'+'{:10,.2f}'.format(float((bd ['tickers'][a6]['vol_eth'])))+'  ==>   393.96')
-
-
+print('===================================')
+print ('BTC     :'+'{:10,.2f}'.format(float(per1))+'% ETH :'+'{:8,.2f}'.format(float(per2))+'%')
+print ('VOL BTC :'+'{:10,.2f}'.format(float((bd ['tickers'][a1]['vol_btc'])))+'   ==>    63.36')
+print ('VOL ETH :'+'{:10,.2f}'.format(float((bd ['tickers'][a6]['vol_eth'])))+'   ==>   529.80')
+print ('VOL BTC :'+'{:10,.2f}'.format(float(vol1))+'   ==> 10.228.63')
+print ('VOL ETH :'+'{:10,.2f}'.format(float(vol2))+'   ==> 25.566.15')
 
 R3 = (float(RS3)*float(bd['tickers'][a2]['last']))
 R2 = (float(RS2)*float(bd['tickers'][a2]['last']))
