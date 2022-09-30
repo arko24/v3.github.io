@@ -50,7 +50,7 @@ b9 = ('adaidr')
 
 #masukan Aset
 #k0 = (float('0.56709822')*float(bd['tickers'][a2]['last']))
-k0 = (float('1.5')*float(bd['tickers'][a2]['last']))
+k0 = (float('2.5')*float(bd['tickers'][a2]['last']))
 k2 = (float('807910.48519736')*float(bd['tickers'][a2]['last']))
 k3 = (float('9.0521571')*float(bd['tickers'][a2]['last']))
 k4 = (float('4.10860236')*float(bd['tickers'][a2]['last']))
@@ -87,6 +87,7 @@ print('==========================================')
 print ('USDT    :'+'{:10,.2f}'.format(float((bd ['tickers'][a2]['last'])))+' HIGH :'+'{:10,.2f}'.format(float((bd ['tickers'][a2]['high']))))
 print ('BULL    :'+'{:10,.2f}'.format(float((bd ['tickers'][a5]['last'])))+' LOW  :'+'{:10,.2f}'.format(float((bd ['tickers'][a5]['low']))))
 print ('BEAR    :'+'{:10,.6f}'.format(float((bd ['tickers'][a3]['last'])))+' HIGH :'+'{:10,.6f}'.format(float((bd ['tickers'][a3]['high']))))
+print ('ADA     :'+'{:10,.2f}'.format(float((bd ['tickers'][a9]['last'])))+' LOW  :'+'{:10,.2f}'.format(float((bd ['tickers'][a9]['low']))))
 print ('ETHBULL :'+'{:10,.2f}'.format(float((bd ['tickers'][a7]['last'])))+' LOW  :'+'{:10,.2f}'.format(float((bd ['tickers'][a7]['low']))))
 #print ('BNBBULL  :'+'{:10,.2f}'.format(float((bd ['tickers'][a8]['last'])))+'  LOW   :'+'{:10,.2f}'.format(float((bd ['tickers'][a8]['low']))))
  
