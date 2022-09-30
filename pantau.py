@@ -35,6 +35,7 @@ a5 = ('bull_usdt')
 a6 = ('eth_idr')
 a7 = ('ethbull_usdt')
 a8 = ('bnbbull_usdt')
+a9 = ('ada_idr')
 
 #parameter harga all2
 b1 = ('btcidr')
@@ -45,6 +46,7 @@ b5 = ('bullusdt')
 b6 = ('ethidr')
 b7 = ('ethbull_usdt')
 b8 = ('bnbbull_usdt')
+b9 = ('adaidr')
 
 #masukan Aset
 #k0 = (float('0.56709822')*float(bd['tickers'][a2]['last']))
@@ -52,6 +54,7 @@ k0 = (float('1.5')*float(bd['tickers'][a2]['last']))
 k2 = (float('807910.48519736')*float(bd['tickers'][a2]['last']))
 k3 = (float('9.0521571')*float(bd['tickers'][a2]['last']))
 k4 = (float('4.10860236')*float(bd['tickers'][a2]['last']))
+k5 = (float('151.5500195'))
 
 #support / resistant harian
 RS3 = float('20999.5')
@@ -78,6 +81,7 @@ print('ESTIMASI BULL    :''{:16,.2f}'.format(float(bd['tickers'][a5]['last'])*fl
 print('ESTIMASI BEAR    :''{:16,.2f}'.format(float(bd['tickers'][a3]['last'])*float(k2)))
 #print('ESTIMASI BNBBULL :''{:16,.2f}'.format(float(bd['tickers'][a8]['last'])*float(k4)))
 #print('ESTIMASI ASET   :''{:16,.2f}'.format((ax1)+(ax2)))
+print('ESTIMASI ADA     :''{:16,.2f}'.format(float(bd['tickers'][a9]['last'])*float(k5)))
 
 print('==========================================')
 print ('USDT    :'+'{:10,.2f}'.format(float((bd ['tickers'][a2]['last'])))+' HIGH :'+'{:10,.2f}'.format(float((bd ['tickers'][a2]['high']))))
@@ -88,10 +92,10 @@ print ('ETHBULL :'+'{:10,.2f}'.format(float((bd ['tickers'][a7]['last'])))+' LOW
  
 print('===================================')
 #print ('BTC     :'+'{:10,.2f}'.format(float(per1))+'% ETH :'+'{:8,.2f}'.format(float(per2))+'%')
-print ('VOL BTC :'+'{:10,.2f}'.format(float((bd ['tickers'][a1]['vol_btc'])))+' ==>     57.17')
-print ('VOL ETH :'+'{:10,.2f}'.format(float((bd ['tickers'][a6]['vol_eth'])))+' ==>    512.52')
-print ('VOL BTC :'+'{:10,.2f}'.format(float(vol1))+' ==> 10,386.51')
-print ('VOL ETH :'+'{:10,.2f}'.format(float(vol2))+' ==> 26,447.81')
+print ('VOL BTC :'+'{:10,.2f}'.format(float((bd ['tickers'][a1]['vol_btc'])))+' ==>     30.22')
+print ('VOL ETH :'+'{:10,.2f}'.format(float((bd ['tickers'][a6]['vol_eth'])))+' ==>    386.43')
+print ('VOL BTC :'+'{:10,.2f}'.format(float(vol1))+' ==> 10,416.54')
+print ('VOL ETH :'+'{:10,.2f}'.format(float(vol2))+' ==> 25,329.32')
 
 R3 = (float(RS3)*float(bd['tickers'][a2]['last']))
 R2 = (float(RS2)*float(bd['tickers'][a2]['last']))
