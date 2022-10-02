@@ -6,7 +6,7 @@ from datetime import datetime
 
 
 #script 
-subprocess.call("clear", shell=True)
+subprocess.call("cls", shell=True)
 
 #class
 def xharga(coin):
@@ -37,6 +37,7 @@ a7 = ('ethbull_usdt')
 a8 = ('bnbbull_usdt')
 a9 = ('ada_idr')
 
+
 #parameter harga all2
 b1 = ('btcidr')
 b2 = ('usdtidr')
@@ -50,11 +51,12 @@ b9 = ('adaidr')
 
 #masukan Aset
 #k0 = (float('0.56709822')*float(bd['tickers'][a2]['last']))
-k0 = (float('2.5')*float(bd['tickers'][a2]['last']))
-k2 = (float('807910.48519736')*float(bd['tickers'][a2]['last']))
+k0 = (float('1.5')*float(bd['tickers'][a2]['last']))
+k2 = (float('508236.76916036')*float(bd['tickers'][a2]['last']))
 k3 = (float('9.0521571')*float(bd['tickers'][a2]['last']))
 k4 = (float('4.10860236')*float(bd['tickers'][a2]['last']))
 k5 = (float('151.5500195'))
+
 
 #support / resistant harian
 RS3 = float('20999.5')
@@ -77,26 +79,25 @@ print('==========================================')
 ax1 = (float(bd['tickers'][a5]['last'])*float(k0))
 ax2 = (float(bd['tickers'][a3]['last'])*float(k2))
 print('ESTIMASI BULL    :''{:16,.2f}'.format(float(bd['tickers'][a5]['last'])*float(k0)))
+print('ESTIMASI ADA     :''{:16,.2f}'.format(float(bd['tickers'][a9]['last'])*float(k5)))
 #print('ESTIMASI ETHBULL :''{:16,.2f}'.format(float(bd['tickers'][a7]['last'])*float(k3)))
 print('ESTIMASI BEAR    :''{:16,.2f}'.format(float(bd['tickers'][a3]['last'])*float(k2)))
-#print('ESTIMASI BNBBULL :''{:16,.2f}'.format(float(bd['tickers'][a8]['last'])*float(k4)))
 #print('ESTIMASI ASET   :''{:16,.2f}'.format((ax1)+(ax2)))
-print('ESTIMASI ADA     :''{:16,.2f}'.format(float(bd['tickers'][a9]['last'])*float(k5)))
 
 print('==========================================')
-print ('USDT    :'+'{:10,.2f}'.format(float((bd ['tickers'][a2]['last'])))+' HIGH :'+'{:10,.2f}'.format(float((bd ['tickers'][a2]['high']))))
+print ('USDT    :'+'{:10,.2f}'.format(float((bd ['tickers'][a2]['last'])))+' LOW  :'+'{:10,.2f}'.format(float((bd ['tickers'][a2]['low']))))
 print ('BULL    :'+'{:10,.2f}'.format(float((bd ['tickers'][a5]['last'])))+' LOW  :'+'{:10,.2f}'.format(float((bd ['tickers'][a5]['low']))))
 print ('BEAR    :'+'{:10,.6f}'.format(float((bd ['tickers'][a3]['last'])))+' HIGH :'+'{:10,.6f}'.format(float((bd ['tickers'][a3]['high']))))
-print ('ADA     :'+'{:10,.2f}'.format(float((bd ['tickers'][a9]['last'])))+' LOW  :'+'{:10,.2f}'.format(float((bd ['tickers'][a9]['low']))))
 print ('ETHBULL :'+'{:10,.2f}'.format(float((bd ['tickers'][a7]['last'])))+' LOW  :'+'{:10,.2f}'.format(float((bd ['tickers'][a7]['low']))))
 #print ('BNBBULL  :'+'{:10,.2f}'.format(float((bd ['tickers'][a8]['last'])))+'  LOW   :'+'{:10,.2f}'.format(float((bd ['tickers'][a8]['low']))))
+print ('ADA     :'+'{:10,.2f}'.format(float((bd ['tickers'][a9]['last'])))+' LOW  :'+'{:10,.2f}'.format(float((bd ['tickers'][a9]['low']))))
  
 print('===================================')
 #print ('BTC     :'+'{:10,.2f}'.format(float(per1))+'% ETH :'+'{:8,.2f}'.format(float(per2))+'%')
-print ('VOL BTC :'+'{:10,.2f}'.format(float((bd ['tickers'][a1]['vol_btc'])))+' ==>     30.22')
-print ('VOL ETH :'+'{:10,.2f}'.format(float((bd ['tickers'][a6]['vol_eth'])))+' ==>    386.43')
-print ('VOL BTC :'+'{:10,.2f}'.format(float(vol1))+' ==> 10,416.54')
-print ('VOL ETH :'+'{:10,.2f}'.format(float(vol2))+' ==> 25,329.32')
+print ('VOL BTC :'+'{:10,.2f}'.format(float((bd ['tickers'][a1]['vol_btc'])))+' ==>     15.11')
+print ('VOL ETH :'+'{:10,.2f}'.format(float((bd ['tickers'][a6]['vol_eth'])))+' ==>    161.64')
+print ('VOL BTC :'+'{:10,.2f}'.format(float(vol1))+' ==>  8,125.57')
+print ('VOL ETH :'+'{:10,.2f}'.format(float(vol2))+' ==> 11,459.06')
 
 R3 = (float(RS3)*float(bd['tickers'][a2]['last']))
 R2 = (float(RS2)*float(bd['tickers'][a2]['last']))
