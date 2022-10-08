@@ -94,10 +94,10 @@ print ('ADA     :'+'{:10,.2f}'.format(float((bd ['tickers'][a9]['last'])))+' LOW
  
 print('===================================')
 #print ('BTC     :'+'{:10,.2f}'.format(float(per1))+'% ETH :'+'{:8,.2f}'.format(float(per2))+'%')
-print ('VOL BTC :'+'{:10,.2f}'.format(float((bd ['tickers'][a1]['vol_btc'])))+' ==>     13.21')
-print ('VOL ETH :'+'{:10,.2f}'.format(float((bd ['tickers'][a6]['vol_eth'])))+' ==>    266.99')
-print ('VOL BTC :'+'{:10,.2f}'.format(float(vol1))+' ==>  8,775.66')
-print ('VOL ETH :'+'{:10,.2f}'.format(float(vol2))+' ==> 11,974.95')
+print ('VOL BTC :'+'{:10,.2f}'.format(float((bd ['tickers'][a1]['vol_btc'])))+' ==>     29.78')
+print ('VOL ETH :'+'{:10,.2f}'.format(float((bd ['tickers'][a6]['vol_eth'])))+' ==>    168.33')
+print ('VOL BTC :'+'{:10,.2f}'.format(float(vol1))+' ==>  8,624.13')
+print ('VOL ETH :'+'{:10,.2f}'.format(float(vol2))+' ==> 16,746.11')
 
 R3 = (float(RS3)*float(bd['tickers'][a2]['last']))
 R2 = (float(RS2)*float(bd['tickers'][a2]['last']))
