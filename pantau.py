@@ -59,12 +59,12 @@ k5 = (float('151.5500195'))
 
 
 #support / resistant harian
-RS3 = float('21248.0')
-RS2 = float('20539.3')
-RS1 = float('20101.4')
-SS1 = float('18684.0')
-SS2 = float('18246.1')
-SS3 = float('17537.4')
+RS3 = float('21095.4')
+RS2 = float('20522.6')
+RS1 = float('20168.7')
+SS1 = float('19023.1')
+SS2 = float('18669.2')
+SS3 = float('18096.4')
 
 #binance
 bi1 = (float(bd2[7]['lastPrice']))
@@ -93,10 +93,10 @@ print ('ADA     :'+'{:10,.2f}'.format(float((bd ['tickers'][a9]['last'])))+' LOW
  
 print('===================================')
 #print ('BTC     :'+'{:10,.2f}'.format(float(per1))+'% ETH :'+'{:8,.2f}'.format(float(per2))+'%')
-print ('VOL BTC :'+'{:10,.2f}'.format(float((bd ['tickers'][a1]['vol_btc'])))+' ==>     29.78')
-print ('VOL ETH :'+'{:10,.2f}'.format(float((bd ['tickers'][a6]['vol_eth'])))+' ==>    168.33')
-print ('VOL BTC :'+'{:10,.2f}'.format(float(vol1))+' ==>  8,624.13')
-print ('VOL ETH :'+'{:10,.2f}'.format(float(vol2))+' ==> 16,746.11')
+print ('VOL BTC :'+'{:10,.2f}'.format(float((bd ['tickers'][a1]['vol_btc'])))+' ==>     10.81')
+print ('VOL ETH :'+'{:10,.2f}'.format(float((bd ['tickers'][a6]['vol_eth'])))+' ==>    120.91')
+print ('VOL BTC :'+'{:10,.2f}'.format(float(vol1))+' ==>  7,292.68')
+print ('VOL ETH :'+'{:10,.2f}'.format(float(vol2))+' ==>  7,094.60')
 
 R3 = (float(RS3)*float(bd['tickers'][a2]['last']))
 R2 = (float(RS2)*float(bd['tickers'][a2]['last']))
