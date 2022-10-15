@@ -86,8 +86,8 @@ print('ESTIMASI BEAR    :''{:16,.2f}'.format(float(bd['tickers'][a3]['last'])*fl
 print('==========================================')
 print ('USDT    :'+'{:10,.2f}'.format(float((bd ['tickers'][a2]['last'])))+' HIGH :'+'{:10,.2f}'.format(float((bd ['tickers'][a2]['high']))))
 print ('BULL    :'+'{:10,.2f}'.format(float((bd ['tickers'][a5]['last'])))+' LOW  :'+'{:10,.2f}'.format(float((bd ['tickers'][a5]['low']))))
-print ('BEAR    :'+'{:10,.6f}'.format(float((bd ['tickers'][a3]['last'])))+' HIGH :'+'{:10,.6f}'.format(float((bd ['tickers'][a3]['high']))))
 print ('ETHBULL :'+'{:10,.2f}'.format(float((bd ['tickers'][a7]['last'])))+' LOW  :'+'{:10,.2f}'.format(float((bd ['tickers'][a7]['low']))))
+print ('BEAR    :'+'{:10,.6f}'.format(float((bd ['tickers'][a3]['last'])))+' HIGH :'+'{:10,.6f}'.format(float((bd ['tickers'][a3]['high']))))
 #print ('BNBBULL  :'+'{:10,.2f}'.format(float((bd ['tickers'][a8]['last'])))+'  LOW   :'+'{:10,.2f}'.format(float((bd ['tickers'][a8]['low']))))
 #print ('ADA     :'+'{:10,.2f}'.format(float((bd ['tickers'][a9]['last'])))+' LOW  :'+'{:10,.2f}'.format(float((bd ['tickers'][a9]['low']))))
  
