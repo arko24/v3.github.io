@@ -53,7 +53,7 @@ b9 = ('adaidr')
 #k0 = (float('0.56709822')*float(bd['tickers'][a2]['last']))
 k0 = (float('1.5')*float(bd['tickers'][a2]['last']))
 k2 = (float('508236.76916036')*float(bd['tickers'][a2]['last']))
-k3 = (float('21.4')*float(bd['tickers'][a2]['last']))
+k3 = (float('22.6')*float(bd['tickers'][a2]['last']))
 k4 = (float('4.10860236')*float(bd['tickers'][a2]['last']))
 k5 = (float('151.5500195'))
 
