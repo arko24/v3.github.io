@@ -59,12 +59,12 @@ k5 = (float('151.5500195'))
 
 
 #support / resistant harian
-RS3 = float('21095.4')
-RS2 = float('20522.6')
-RS1 = float('20168.7')
-SS1 = float('19023.1')
-SS2 = float('18669.2')
-SS3 = float('18096.4')
+RS3 = float('20798.2')
+RS2 = float('20138.0')
+RS1 = float('19730.2')
+SS1 = float('18410.0')
+SS2 = float('18002.2')
+SS3 = float('17342.0')
 
 #binance
 bi1 = (float(bd2[7]['lastPrice']))
