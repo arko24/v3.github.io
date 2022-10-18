@@ -52,7 +52,7 @@ b9 = ('adaidr')
 #masukan Aset
 #k0 = (float('0.56709822')*float(bd['tickers'][a2]['last']))
 k0 = (float('1.5')*float(bd['tickers'][a2]['last']))
-k2 = (float('681402.88218136')*float(bd['tickers'][a2]['last']))
+k2 = (float('596852.53811436')*float(bd['tickers'][a2]['last']))
 k3 = (float('31.3')*float(bd['tickers'][a2]['last']))
 k4 = (float('4.10860236')*float(bd['tickers'][a2]['last']))
 k5 = (float('151.5500195'))
@@ -93,10 +93,10 @@ print ('BEAR    :'+'{:10,.6f}'.format(float((bd ['tickers'][a3]['last'])))+' LOW
  
 print('===================================')
 #print ('BTC     :'+'{:10,.2f}'.format(float(per1))+'% ETH :'+'{:8,.2f}'.format(float(per2))+'%')
-print ('VOL BTC :'+'{:10,.2f}'.format(float((bd ['tickers'][a1]['vol_btc'])))+' ==>     23.72')
-print ('VOL ETH :'+'{:10,.2f}'.format(float((bd ['tickers'][a6]['vol_eth'])))+' ==>    234.07')
-print ('VOL BTC :'+'{:10,.2f}'.format(float(vol1))+' ==>  8,650.23')
-print ('VOL ETH :'+'{:10,.2f}'.format(float(vol2))+' ==>  4,754.88')
+print ('VOL BTC :'+'{:10,.2f}'.format(float((bd ['tickers'][a1]['vol_btc'])))+' ==>     31.02')
+print ('VOL ETH :'+'{:10,.2f}'.format(float((bd ['tickers'][a6]['vol_eth'])))+' ==>    339.00')
+print ('VOL BTC :'+'{:10,.2f}'.format(float(vol1))+' ==>  9,240.59')
+print ('VOL ETH :'+'{:10,.2f}'.format(float(vol2))+' ==> 11,905.81')
 
 R3 = (float(RS3)*float(bd['tickers'][a2]['last']))
 R2 = (float(RS2)*float(bd['tickers'][a2]['last']))
