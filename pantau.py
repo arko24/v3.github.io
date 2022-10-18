@@ -52,7 +52,7 @@ b9 = ('adaidr')
 #masukan Aset
 #k0 = (float('0.56709822')*float(bd['tickers'][a2]['last']))
 k0 = (float('1.5')*float(bd['tickers'][a2]['last']))
-k2 = (float('596852.53811436')*float(bd['tickers'][a2]['last']))
+k2 = (float('636255.54318436')*float(bd['tickers'][a2]['last']))
 k3 = (float('31.3')*float(bd['tickers'][a2]['last']))
 k4 = (float('4.10860236')*float(bd['tickers'][a2]['last']))
 k5 = (float('151.5500195'))
