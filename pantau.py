@@ -93,10 +93,10 @@ print ('BEAR    :'+'{:10,.6f}'.format(float((bd ['tickers'][a3]['last'])))+' LOW
  
 print('===================================')
 #print ('BTC     :'+'{:10,.2f}'.format(float(per1))+'% ETH :'+'{:8,.2f}'.format(float(per2))+'%')
-print ('VOL BTC :'+'{:10,.2f}'.format(float((bd ['tickers'][a1]['vol_btc'])))+' ==>     29.32')
-print ('VOL ETH :'+'{:10,.2f}'.format(float((bd ['tickers'][a6]['vol_eth'])))+' ==>    313.50')
-print ('VOL BTC :'+'{:10,.2f}'.format(float(vol1))+' ==>  8,311.13')
-print ('VOL ETH :'+'{:10,.2f}'.format(float(vol2))+' ==> 13,159.71')
+print ('VOL BTC :'+'{:10,.2f}'.format(float((bd ['tickers'][a1]['vol_btc'])))+' ==>     18.84')
+print ('VOL ETH :'+'{:10,.2f}'.format(float((bd ['tickers'][a6]['vol_eth'])))+' ==>    148.50')
+print ('VOL BTC :'+'{:10,.2f}'.format(float(vol1))+' ==>  7,953.09')
+print ('VOL ETH :'+'{:10,.2f}'.format(float(vol2))+' ==> 11,262.34')
 
 R3 = (float(RS3)*float(bd['tickers'][a2]['last']))
 R2 = (float(RS2)*float(bd['tickers'][a2]['last']))
