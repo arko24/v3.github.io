@@ -17,7 +17,7 @@ def xharga(coin):
 #parameter
 bd = xharga('')
 crn = ('USDT')
-persen = ('-0.20')
+persen = ('0.05')
 
 #tampil
 for i in range(len(bd)):
