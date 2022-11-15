@@ -21,6 +21,7 @@ crn = ('USDT')
 persen = ('-0.10')
 
 #tampil
-for i in range(len(bd)):
-    print(f"{bd[i]['symbol']}" + f"{bd[i]['lastPrice']}")
+#for i in range(len(bd)):
+#    print(f"{bd[i]['symbol']}" + f"{bd[i]['lastPrice']}")
+print(bd)
 
