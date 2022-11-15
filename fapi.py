@@ -9,7 +9,7 @@ subprocess.call("clear", shell=True)
 
 #class
 def xharga(coin):
-  url = 'https://fapi.binance.com/futures/data/globalLongShortAccountRatio?symbol=BTCUSDT&period=1d&limit=24'
+  url = 'https://fapi.binance.com/futures/data/globalLongShortAccountRatio?symbol=BTCUSDT&period=5m&limit=24'
   r = rq.get(url)
   js = json.loads(r.text)
   return js
@@ -21,3 +21,4 @@ bd = xharga('')
 for i in range(len(bd)):
     print(f"{bd[i]['longAccount']}"+' | '+f"{bd[i]['shortAccount']}")
 
+timestamp
