@@ -18,7 +18,7 @@ def xharga(coin):
 bd = xharga('')
 crn = ('USDT')
 persen = ('0.05')
-price1 = ('0.00001')
+price1 = ('0.0001')
 #tampil
 for i in range(len(bd)):
   if (bd[i]['symbol'][-4:]) == (crn) and (bd[i]['priceChange']) < (persen) and (bd[i]['lastPrice']) > (price1)  :
