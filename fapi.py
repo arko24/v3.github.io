@@ -9,7 +9,7 @@ subprocess.call("clear", shell=True)
 
 #class
 def xharga(coin):
-  url = 'https://fapi.binance.com/futures/data/topLongShortPositionRatio?symbol=BTCUSDT&period=5m&limit=5'
+  url = 'https://fapi.binance.com/futures/data/topLongShortPositionRatio?symbol=BTCUSDT&period=30m&limit=30'
   r = rq.get(url)
   js = json.loads(r.text)
   return js
