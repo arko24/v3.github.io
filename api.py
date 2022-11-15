@@ -19,4 +19,4 @@ bd = xharga('')
 crn = ('BUSD')
 
 #tampil
-print(bd['symbol'])
+print(bd)
