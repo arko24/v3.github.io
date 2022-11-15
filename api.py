@@ -22,5 +22,5 @@ persen = ('0.05')
 #tampil
 for i in range(len(bd)):
   if (bd[i]['symbol'][-4:]) == (crn) and (bd[i]['priceChange']) < (persen):
-    print(f"{i}. {bd[i]['symbol']}" +'  |  '+ f"{i}. {bd[i]['lastPrice']}")
+    print(f"{bd[i]['symbol']}" +'  |  '+ f"{bd[i]['lastPrice']}")
 
