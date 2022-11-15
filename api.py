@@ -20,5 +20,6 @@ crn = ('BUSD')
 
 #tampil
 for i in range(len(bd)):
-    print(f"{i}. {bd[i]['symbol'][-4:]}")
+  if (bd[i]['symbol'][-4:]) == (crn):
+    print(f"{i}. {bd[i]['symbol']}")
 
