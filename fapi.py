@@ -9,7 +9,7 @@ subprocess.call("clear", shell=True)
 
 #class
 def xharga(coin):
-  url = 'https://api.binance.com/fapi/v1/ticker/24hr'
+  url = 'https://fapi.binance.com/fapi/v1/ticker/24hr'
   r = rq.get(url)
   js = json.loads(r.text)
   return js
