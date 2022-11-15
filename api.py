@@ -16,10 +16,11 @@ def xharga(coin):
 
 #parameter
 bd = xharga('')
-crn = ('BUSD')
+crn = ('USDT')
+persen = ('-0.10')
 
 #tampil
 for i in range(len(bd)):
-  if (bd[i]['symbol'][-4:]) == (crn):
-    print(f"{i}. {bd[i]['symbol']}")
+  if (bd[i]['symbol'][-4:]) == (crn) and (bd[i]['priceChange']) < (persen):
+    print(f"{i}. {bd[i]['symbol']['lastPrice']}")
 
