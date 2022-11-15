@@ -19,5 +19,5 @@ bd = xharga('')
 
 #tampil
 for i in range(len(bd)):
-    print(f"{bd[i][longAccount]}"+' | '+f"{bd[i][shortAccount]}")
+    print(f"{bd[i]['longAccount']}"+' | '+f"{bd[i]['shortAccount']}")
 
