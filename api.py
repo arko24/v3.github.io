@@ -19,4 +19,6 @@ bd = xharga('')
 crn = ('BUSD')
 
 #tampil
-print(bd['symbol']['PORTOEUR'])
+print(bd[0]['symbol'])
+print(bd[1]['symbol'])
+print(bd[2]['symbol'])
