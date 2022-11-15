@@ -29,5 +29,5 @@ param = ('&period=5m&limit=1')
 #tampil
 for i in range(len(bd)):
     c1 =(f"{bd[i]['symbol']}")
-    print(f"{bd2&(c1)&(param)}")
+    print(f"{bd2+(c1)+(param)}")
 
