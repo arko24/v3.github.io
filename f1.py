@@ -31,8 +31,8 @@ bd = xharga('')
 bd2 = xharga2('')
 bd3 = xharga3('')
 crn = ('USDT')
-btc = (BTCUSDT)
-eth = (ETHUSDT)
+btc = ('BTCUSDT')
+eth = ('ETHUSDT')
 
 #tampil
 for i in range(len(bd3)):
