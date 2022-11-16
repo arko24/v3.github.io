@@ -37,7 +37,6 @@ eth = ('ETHUSDT')
 #tampil
 for i in range(len(bd3)):
     if (bd3[i]['symbol']) == (btc):
-      '{:16,.2f}'.format(float(bd['prices_7d'][b1]))
       print(f"{bd3[i]['symbol']}" +' : '+'{:16,.2f}'.format(f"{bd3[i]['lastPrice']}"))
 for i in range(len(bd)):
     print(f"{bd[i]['longAccount']}"+' | '+f"{bd[i]['shortAccount']}")
