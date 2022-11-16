@@ -59,7 +59,6 @@ for i in range(len(bd3)):
 
 print('')    
 print ('harga atas')
-print('symbol  : price      :   %     : open       : lowPrice')
 for i in range(len(bd3)):
     if (bd3[i]['symbol'][-4:]) == (crn) and float(bd3[i]['lastPrice']) > float(bd3[i]['openPrice']) * float(per2) :
       print(f"{bd3[i]['symbol']}" +'  price : '+ f"{bd3[i]['lastPrice']}"+'  percent : '+f"{bd3[i]['priceChangePercent']}"+'  open : '+f"{bd3[i]['openPrice']}"+'  low : '+f"{bd3[i]['lowPrice']}"+'  avg : '+f"{bd3[i]['weightedAvgPrice']}")
