@@ -33,6 +33,7 @@ bd3 = xharga3('')
 crn = ('USDT')
 btc = ('BTCUSDT')
 eth = ('ETHUSDT')
+per = ('0.90')
 
 #tampil
 for i in range(len(bd3)):
@@ -51,6 +52,6 @@ for i in range(len(bd2)):
 print('')    
 print ('harga')
 for i in range(len(bd3)):
-    if (bd3[i]['symbol'][-4:]) == (crn) and (bd3[i]['lastPrice']) < float((bd3[i]['openPrice'])*0.90) :
+    if (bd3[i]['symbol'][-4:]) == (crn) and (bd3[i]['lastPrice']) < float(bd3[i]['openPrice']) * float(per) :
       print(f"{bd3[i]['symbol']}" + f"{bd3[i]['lastPrice']}")
     
