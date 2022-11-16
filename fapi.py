@@ -15,7 +15,8 @@ def xharga(coin):
   return js
 
 def xharga2(coin):
-  url = 'https://fapi.binance.com/futures/data/topLongShortAccountRatio?symbol=BTCUSDT&period=5m&limit=10'
+#  url = 'https://fapi.binance.com/futures/data/topLongShortAccountRatio?symbol=BTCUSDT&period=5m&limit=10'
+  url = 'https://fapi.binance.com/futures/data/globalLongShortAccountRatio?symbol=ETHUSDT&period=5m&limit=10'
   r = rq.get(url)
   js = json.loads(r.text)
   return js
@@ -26,10 +27,11 @@ bd2 = xharga2('')
 
 #tampil
 for i in range(len(bd)):
-    print(f"{bd[i]['longAccount']}"+' | '+f"{bd[i]['shortAccount']}")
+    h1 = (f"{bd[i]['longAccount']}"+' | '+f"{bd[i]['shortAccount']}")
 
 print('=====')
 
 for i in range(len(bd2)):
-    print(f"{bd2[i]['longAccount']}"+' | '+f"{bd2[i]['shortAccount']}")
+    h2 = (f"{bd2[i]['longAccount']}"+' | '+f"{bd2[i]['shortAccount']}")
 
+print(h1+'   '+h2)
