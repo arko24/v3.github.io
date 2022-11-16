@@ -25,4 +25,11 @@ bd = xharga('')
 bd2 = xharga2('')
 
 #tampil
-print = (bd[5]['longAccount']+' | '+bd[5]['shortAccount']+' | '+bd2[5]['longAccount']+' | '+bd2[5]['shortAccount'])
+print('BTCUSDT')
+for i in range(len(bd)):
+    print = (f"{bd[i]['longAccount']}"+' | '+f"{bd[i]['shortAccount']}")
+
+print('')
+print('ETHUSDT')
+for i in range(len(bd2)):
+    print = (f"{bd2[i]['longAccount']}"+' | '+f"{bd2[i]['shortAccount']}")
