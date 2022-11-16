@@ -15,7 +15,7 @@ def xharga(coin):
   return js
 
 def xharga2(coin):
-  url = 'https://fapi.binance.com/futures/data/globalLongShortAccountRatio?symbol=*&period=5m&limit=5'
+  url = 'https://fapi.binance.com/futures/data/globalLongShortAccountRatio?symbol=BTCUSDT&period=5m&limit=5'
   r = rq.get(url)
   js = json.loads(r.text)
   return js
