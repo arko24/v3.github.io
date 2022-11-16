@@ -37,12 +37,14 @@ print('BTCUSDT')
 for i in range(len(bd)):
     print = (f"{bd[i]['longAccount']}"+' | '+f"{bd[i]['shortAccount']}")
 
-print('')
+print('===')
 print('ETHUSDT')
+
 for i in range(len(bd2)):
     print = (f"{bd2[i]['longAccount']}"+' | '+f"{bd2[i]['shortAccount']}")
     
 print ('harga')
+
 for i in range(len(bd3)):
     if (bd3[i]['symbol'][-4:]) == (crn):
       print(f"{bd3[i]['symbol']}" + f"{bd3[i]['lastPrice']}")
