@@ -51,6 +51,6 @@ for i in range(len(bd2)):
 print('')    
 print ('harga')
 for i in range(len(bd3)):
-    if (bd3[i]['symbol'][-4:]) == (crn):
+    if (bd3[i]['symbol'][-4:]) == (crn) and (bd3[i]['lastPrice']) < ((bd3[i]['openPrice'])*0.90) :
       print(f"{bd3[i]['symbol']}" + f"{bd3[i]['lastPrice']}")
     
