@@ -21,7 +21,8 @@ def xharga2(coin):
   return js
 
 def xharga3(coin):
-  url = 'https://api.binance.com/api/v3/ticker/24hr'
+#  url = 'https://api.binance.com/api/v3/ticker/24hr'
+  url = 'https://fapi.binance.com/fapi/v1/ticker/24hr'
   r = rq.get(url)
   js = json.loads(r.text)
   return js
