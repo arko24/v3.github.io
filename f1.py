@@ -15,13 +15,13 @@ def xharga(coin):
   return js
 
 def xharga2(coin):
-  url = 'https://api.binance.com/api/v3/ticker/24hr'
+  url = 'https://fapi.binance.com/futures/data/globalLongShortAccountRatio?symbol=ETHUSDT&period=5m&limit=5'
   r = rq.get(url)
   js = json.loads(r.text)
   return js
 
 def xharga3(coin):
-  url = 'https://fapi.binance.com/futures/data/globalLongShortAccountRatio?symbol=ETHUSDT&period=5m&limit=5'
+  url = 'https://api.binance.com/api/v3/ticker/24hr'
   r = rq.get(url)
   js = json.loads(r.text)
   return js
@@ -36,10 +36,12 @@ crn = ('USDT')
 print('BTCUSDT')
 for i in range(len(bd)):
     print(f"{bd[i]['longAccount']}"+' | '+f"{bd[i]['shortAccount']}")
+    
 print('')
 print('ETHUSDT')
 for i in range(len(bd2)):
     print(f"{bd2[i]['longAccount']}"+' | '+f"{bd2[i]['shortAccount']}")
+    
 print('')    
 print ('harga')
 for i in range(len(bd3)):
