@@ -25,4 +25,4 @@ bd = xharga('')
 bd2 = xharga2('')
 
 #tampil
-print = ((bd[0]['longAccount'])+' | '+(bd[0]['shortAccount'])+' | '+(bd2[0]['longAccount'])+' | '+(bd2[0]['shortAccount']))
+print = (bd[5]['longAccount']+' | '+bd[5]['shortAccount']+' | '+bd2[5]['longAccount']+' | '+bd2[5]['shortAccount'])
