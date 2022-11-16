@@ -20,9 +20,17 @@ def xharga2(coin):
   js = json.loads(r.text)
   return js
 
+def xharga3(coin):
+  url = 'https://fapi.binance.com/futures/data/globalLongShortAccountRatio?symbol=ETHUSDT&period=5m&limit=5'
+  r = rq.get(url)
+  js = json.loads(r.text)
+  return js
+
 #parameter
 bd = xharga('')
 bd2 = xharga2('')
+bd3 = xharga3('')
+crn = ('USDT')
 
 #tampil
 print('BTCUSDT')
@@ -33,3 +41,9 @@ print('')
 print('ETHUSDT')
 for i in range(len(bd2)):
     print = (f"{bd2[i]['longAccount']}"+' | '+f"{bd2[i]['shortAccount']}")
+    
+print ('harga')
+for i in range(len(bd3)):
+    if (bd3[i]['symbol'][-4:]) == (crn):
+      print(f"{bd3[i]['symbol']}" + f"{bd3[i]['lastPrice']}")
+    
