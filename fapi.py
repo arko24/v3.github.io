@@ -27,10 +27,20 @@ def xharga3(coin):
   js = json.loads(r.text)
   return js
 
+def xharga4(coin):
+  url = 'https://fapi.binance.com/futures/data/takerlongshortRatio?symbol=BTCUSDT&period=15m&limit=5'
+  r = rq.get(url)
+  js = json.loads(r.text)
+  return js
+
+
+
+
 #parameter
 bd = xharga('')
 bd2 = xharga2('')
 bd3 = xharga3('')
+bd4 = xharga4('')
 crn = ('USDT')
 btc = ('BTCUSDT')
 eth = ('ETHUSDT')
@@ -38,6 +48,9 @@ per = ('0.90')
 per2 = ('1.10')
 
 #tampil
+
+print(bd4)
+
 for i in range(len(bd3)):
     if (bd3[i]['symbol']) == (btc):
       print(f"{bd3[i]['symbol']}" +' : '+f"{bd3[i]['lastPrice']}")
