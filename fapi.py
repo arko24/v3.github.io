@@ -34,6 +34,12 @@ def xharga4(coin):
   return js
 
 
+def xharga5(coin):
+  url = 'https://fapi.binance.com/futures/data/takerlongshortRatio?symbol=ETHUSDT&period=15m&limit=5'
+  r = rq.get(url)
+  js = json.loads(r.text)
+  return js
+
 
 
 #parameter
@@ -41,6 +47,7 @@ bd = xharga('')
 bd2 = xharga2('')
 bd3 = xharga3('')
 bd4 = xharga4('')
+bd5 = xharga5('')
 crn = ('USDT')
 btc = ('BTCUSDT')
 eth = ('ETHUSDT')
@@ -52,7 +59,7 @@ per2 = ('1.10')
 
 print('BTCUSDT|'+'sell vol   |'+'buy vol  ')
 for i in range(len(bd4)):
-    print(f"{bd4[i]['buySellRatio']}"+' | '+f"{bd4[i]['sellVol']}"+' | '+f"{bd4[i]['buyVol']}"+' | '+(float(f"{bd4[i]['sellVol']}")-float(f"{bd4[i]['buyVol']}")))
+    print(f"{bd4[i]['buySellRatio']}"+' | '+f"{bd4[i]['sellVol']}"+' | '+f"{bd4[i]['buyVol']}")
 
 print('')
 for i in range(len(bd3)):
@@ -60,6 +67,11 @@ for i in range(len(bd3)):
       print(f"{bd3[i]['symbol']}" +' : '+f"{bd3[i]['lastPrice']}")
 for i in range(len(bd)):
     print(f"{bd[i]['longAccount']}"+' | '+f"{bd[i]['shortAccount']}")
+    
+print('')
+print('ETHUSDT|'+'sell vol   |'+'buy vol  ')
+for i in range(len(bd5)):
+    print(f"{bd5[i]['buySellRatio']}"+' | '+f"{bd5[i]['sellVol']}"+' | '+f"{bd5[i]['buyVol']}")
     
 print('')
 for i in range(len(bd3)):
