@@ -50,6 +50,9 @@ per2 = ('1.10')
 #tampil
 
 print(bd4)
+print('BTCUSDT  |'+'ratio  |'+'sell vol |'+'buy vol  ')
+for i in range(len(bd4)):
+    print(f"{bd4[i]['buySellRatio']}"+' | '+f"{bd4[i]['sellVol']}"+' | '+f"{bd4[i]['buyVol']}")
 
 for i in range(len(bd3)):
     if (bd3[i]['symbol']) == (btc):
