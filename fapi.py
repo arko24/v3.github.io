@@ -51,7 +51,7 @@ bd5 = xharga5('')
 crn = ('USDT')
 btc = ('BTCUSDT')
 eth = ('ETHUSDT')
-per = ('0.80')
+per = ('0.85')
 per2 = ('1.10')
 
 #tampil
