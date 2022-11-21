@@ -57,9 +57,9 @@ per2 = ('1.10')
 #tampil
 
 
-print('BTCUSDT|'+'sell vol   |'+'buy vol  ')
+print('BTCUSDT|'+'buy vol   |'+'sell vol  ')
 for i in range(len(bd4)):
-    print(f"{bd4[i]['buySellRatio']}"+' | '+f"{bd4[i]['sellVol']}"+' | '+f"{bd4[i]['buyVol']}")
+    print(f"{bd4[i]['buySellRatio']}"+' | '+f"{bd4[i]['buyVol']}"+' | '+f"{bd4[i]['sellVol']}")
 
 print('')
 for i in range(len(bd3)):
@@ -69,9 +69,9 @@ for i in range(len(bd)):
     print(f"{bd[i]['longAccount']}"+' | '+f"{bd[i]['shortAccount']}")
     
 print('')
-print('ETHUSDT|'+'sell vol   |'+'buy vol  ')
+print('ETHUSDT|'+'buy vol   |'+'sell vol  ')
 for i in range(len(bd5)):
-    print(f"{bd5[i]['buySellRatio']}"+' | '+f"{bd5[i]['sellVol']}"+' | '+f"{bd5[i]['buyVol']}")
+    print(f"{bd5[i]['buySellRatio']}"+' | '+f"{bd5[i]['buyVol']}"+' | '+f"{bd5[i]['sellVol']}")
     
 print('')
 for i in range(len(bd3)):
@@ -79,7 +79,8 @@ for i in range(len(bd3)):
       print(f"{bd3[i]['symbol']}"+' : '+f"{bd3[i]['lastPrice']}")
 for i in range(len(bd2)):
     print(f"{bd2[i]['longAccount']}"+' | '+f"{bd2[i]['shortAccount']}")
-    
+
+print('')
 print('')    
 print ('harga bawah')
 for i in range(len(bd3)):
