@@ -52,8 +52,9 @@ per2 = ('1.10')
 
 print('BTCUSDT|'+'sell vol   |'+'buy vol  ')
 for i in range(len(bd4)):
-    print(f"{bd4[i]['buySellRatio']}"+' | '+f"{bd4[i]['sellVol']}"+' | '+f"{bd4[i]['buyVol']}"+' | '+(f"{bd4[i]['sellVol']}"-f"{bd4[i]['buyVol']}"))
+    print(f"{bd4[i]['buySellRatio']}"+' | '+f"{bd4[i]['sellVol']}"+' | '+f"{bd4[i]['buyVol']}"+' | '+(float(f"{bd4[i]['sellVol']}")-float(f"{bd4[i]['buyVol']}")))
 
+print('')
 for i in range(len(bd3)):
     if (bd3[i]['symbol']) == (btc):
       print(f"{bd3[i]['symbol']}" +' : '+f"{bd3[i]['lastPrice']}")
