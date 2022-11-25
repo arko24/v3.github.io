@@ -48,10 +48,10 @@ bd2 = xharga2('')
 bd3 = xharga3('')
 bd4 = xharga4('')
 bd5 = xharga5('')
-crn = ('USDT')
+crn = ('BUSD')
 btc = ('BTCUSDT')
 eth = ('ETHUSDT')
-per = ('0.85')
+per = ('0.90')
 per2 = ('1.10')
 
 #tampil
